@@ -1,4 +1,5 @@
 vim.g.mapleader = ' '
+
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 -- Allows you to visual mode highlight and the use j and k keys to move selected up and down.
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
@@ -12,6 +13,6 @@ vim.keymap.set('n', 'N', 'Nzzzv')
 -- greatest remap ever. Allows you to use leader p in order to not overwrite your copied with the one it deletes.
 vim.keymap.set('x', '<leader>p', [["_dP]])
 vim.keymap.set('n', 'Q', '<nop>')
-vim.keymap.set('n', '<leader>w', ':wa<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>w', ':w<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>q', ':q<CR>', { noremap = true, silent = true })
 -- t
